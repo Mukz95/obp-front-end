@@ -1,0 +1,15 @@
+h1{
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+}
+
+table{
+  width: 100%;
+}
+
+.table-spacing{
+  margin-top: 70px;
+  margin-left: 10%;
+  margin-right: 10%;
+}

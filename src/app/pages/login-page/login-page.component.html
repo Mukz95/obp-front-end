@@ -1,0 +1,37 @@
+<h1>OBP API SDK ANGULAR EXAMPLE</h1>
+<p style="text-align: center">This is a demo of direct login, fetching accounts and checking total spending breakdown in transaction </p>
+
+<form [formGroup]="loginForm" class="login-form" style="margin-top: 60px">
+  <!--OBP API BASEURL Form Control -->
+  <div class="center-elem">
+  <mat-form-field appearance="outline">
+    <mat-label class="mat-label">OBP API Base Url</mat-label>
+    <input [disabled]="true" matInput placeholder="Placeholder" value="https://apisandbox.openbankproject.com/">
+  </mat-form-field>
+  </div>
+  <!--OBP Consumer Key -->
+  <div class="center-elem">
+  <mat-form-field appearance="outline">
+    <mat-label class="mat-label">Consumer Key</mat-label>
+    <input formControlName="consumerKey" matInput placeholder="Consumer Key" >
+  </mat-form-field>
+  </div>
+  <!--OBP Username Form Control -->
+  <div class="center-elem">
+  <mat-form-field appearance="outline">
+    <mat-label class="mat-label">Username</mat-label>
+    <input matInput formControlName="username" placeholder="Username">
+  </mat-form-field>
+  </div>
+  <!--OBP Password Form Control -->
+  <div class="center-elem">
+  <mat-form-field appearance="outline">
+    <mat-label class="mat-label">Password</mat-label>
+    <input formControlName="password" matInput placeholder="Password" type="password">
+  </mat-form-field>
+  </div>
+
+  <button mat-flat-button color="primary" (click)="getToken()">GET TOKEN</button>
+
+
+</form>

@@ -1,0 +1,49 @@
+/*::ng-deep .total-value{*/
+/*  margin-bottom: 20px;*/
+/*}*/
+
+.chart{
+  margin: 0 15%;
+}
+
+::ng-deep div.item-color{
+  height: 60px !important;
+}
+
+::ng-deep div.item-value{
+  margin-top: 2px !important;
+}
+
+::ng-deep div.item-label{
+  margin: 3px 0px !important;
+}
+
+.transactions{
+  margin-left: 10%;
+  margin-top: 20px;
+  height: 500px;
+  overflow: scroll;
+  margin-right: 10%;
+
+}
+
+table{
+  width: 100%;
+}
+
+.scrollit {
+  overflow:scroll;
+  height:100px;
+}
+
+.mat-column-description {
+  margin-left: 10%;
+  width: 40%;
+}
+.mat-column-category {
+  flex: 0 0 50%;
+}
+
+.advanced-pie-legend .legend-items-container .legend-items {
+  overflow: initial !important;
+}
