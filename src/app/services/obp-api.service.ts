@@ -35,6 +35,6 @@ export class ObpApiService {
   };
 
   getTransactions(): Observable<any>{
-    return this.httpClient.get('http://localhost:3001'.concat('/transactions'));
+    return this.httpClient.get('http://ec2-3-138-201-210.us-east-2.compute.amazonaws.com'.concat('/transactions'));
   }
 }
