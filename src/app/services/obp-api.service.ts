@@ -35,6 +35,6 @@ export class ObpApiService {
   };
 
   getTransactions(): Observable<any>{
-    return this.httpClient.get('https://obp-api-example.herokuapp.com'.concat('/transactions'));
+    return this.httpClient.get('http://ec2-3-138-201-210.us-east-2.compute.amazonaws.com'.concat('/transactions'));
   }
 }
