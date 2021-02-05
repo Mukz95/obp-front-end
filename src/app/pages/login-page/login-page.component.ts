@@ -20,10 +20,11 @@ export class LoginPageComponent implements OnInit {
   });
 
   ngOnInit(): void {
+    localStorage.setItem('obp-token', 'eyJhbGciOiJIUzI1NiJ9.eyIiOiIifQ.71TqSWW6q6KeIjB8BT1jEUIBt7rSP4cT7Sq5sY6X2zo');
+
   }
 
   getToken(){
-    this.router.navigate(['/dashboard']);
     // Making Request for Direct Login JWT to Authenticate user
     this.ObpService.getDirectLoginToken(this.loginForm.controls.username.value,
       this.loginForm.controls.password.value, this.loginForm.controls.consumerKey.value).subscribe(value => {
@@ -32,6 +33,9 @@ export class LoginPageComponent implements OnInit {
           localStorage.setItem('obp-token', value.token);
         }
     });
+
+    this.router.navigate(['/dashboard']);
+
   }
 
 }

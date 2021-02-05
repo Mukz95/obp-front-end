@@ -17,6 +17,7 @@ export class DashboardPageComponent implements OnInit {
   displayedColumns: string[] = ['bankName', 'accountInfo', 'accountType', 'action'];
   tokenString: string;
   hideTable = true;
+  isDisabled: any;
 
 
   constructor(private obpApiService: ObpApiService, private dialog: MatDialog) { }
